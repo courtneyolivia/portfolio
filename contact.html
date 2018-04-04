@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Courtney Olivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Reference -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- JavaScript Reference -->
+    <link rel="text/javascript" href="assets/js/app.js">
+    <!-- Google Fonts Reference -->
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <!-- jQuery Reference -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div id="nav">
+        <div id="logo">
+            <img src="assets/img/CourtneyOliviaLogo.png">
+        </div>
+        <ul>
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+
+        <!-- Content -->
+        <div class="content">
+            <h2>About</h2>
+            <div id="me">
+                <img src="me.jpg" alt="itsme">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odio sapiente molestias temporibus dignissimos
+                debitis quasi doloremque quam. Accusamus quis voluptatum non distinctio doloribus quae ad, reprehenderit
+                sint nulla laborum!</p>
+            <p>Optio omnis odit magni, quidem. Accusamus, quibusdam ipsam. Praesentium nemo ex maiores voluptas assumenda aut,
+                fugit itaque animi. Tempora impedit, alias minima eligendi veritatis fuga libero obcaecati voluptatum! Tenetur,
+                consequuntur.
+            </p>
+            <p>Vero repellendus, ipsa cumque, laborum quaerat expedita sint corrupti nemo odio, iusto nulla dolores? Possimus
+                ducimus tempore sunt nemo dolorem, perspiciatis non reiciendis delectus provident reprehenderit, aperiam
+                ex a ratione.</p>
+        </div>
+
+
+    </div>
+    <!-- End of container -->
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div>&copy; Copyright 2018 Olivia Rochelle</div>
+    </footer>
+
+
+    <script src="assets/js/app.js">
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>

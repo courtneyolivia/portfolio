@@ -1,0 +1,220 @@
+body {
+    font-family: arial, sans-serif;
+    background-color: #fff;
+    margin: 5%;
+}
+
+h2 {
+    font-family: 'Satisfy', arial;
+    font-size: 50px;
+    color: #ae75b2;
+}
+
+/* Navigation */
+#nav ul {
+    list-style: none;
+    color: #000;
+    text-align: right;
+    padding: 20px 0 20px 0;
+}
+
+#nav > ul > li {
+    display: inline-block;
+    padding: 0 25px 0 25px;
+    font-size: 15px;
+}
+
+#nav > ul > li > a:hover {
+    color: #5e65ae;
+    background-color: #e07095;
+    transition: all 0.5s ease;
+    border-radius: 15px 20px 30px 0;
+}
+
+/* Logo */
+
+#logo {
+    float: left;
+    padding-bottom: 15%;
+    margin: 0;
+}
+
+/* Image of Me */
+#me-image img {
+    border-radius: 50%;
+    border: 10px solid #e07095;
+    width: 50%;
+    height: 50%;
+    margin: 30px;
+    float: left; 
+}
+
+
+/* Content */
+.content {
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #FFF8DC;
+}
+
+/* Projects */
+.box1 {
+    margin: 150px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 30px;
+    background-color: #38914c;
+    color: #fff;
+}
+
+.box2 {
+    margin: 150px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 30px;
+    background-color: #5e65ae;
+    color: #fff;
+}
+
+.box3 {
+    margin: 150px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 30px;
+    background-color: #46c1be;
+    color: #fff;
+}
+
+.box4 {
+    margin: 150px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 30px;
+    background-color: #e79a38;
+    color: #fff;
+}
+
+.box5 {
+    margin: 150px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 30px;
+    background-color: #e07095;
+    color: #fff;
+}
+
+.box6 {
+    margin: 150px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 30px;
+    background-color: #decb22;
+    color: #fff;
+}
+
+/* Social Media Icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 15px;
+    float: right;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background: #e07095;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #ae75b2;
+    color: white;
+}
+
+.fa-github {
+    background: #6462ac;
+    color: white;
+}
+
+.fa-instagram {
+    background: #38914c;
+    color: white;
+}
+
+/* Footer */
+
+#footer p {
+    float: left;
+}
+
+#footer a {
+    float: right;
+}
+
+
+/* Media Queries 
+@media screen and (min-width: 700px) {
+    body {
+        max-width: 90%;
+    }
+    nav,
+    .content {
+        float: right;
+    }
+    nav {
+        width: 20.83333%;
+        margin-right: 1.041667%;
+    }
+    .content {
+        width: 78.125%;
+    }
+
+    #logo {
+        float: left;
+    }
+
+    #nav {
+        height: auto;
+        position: relative;
+        background: transparent;
+        float: right;
+        clip-path: initial;
+    }
+
+    #nav li {
+        display: inline-block;
+        border: none;
+    }
+
+    #nav a {
+        padding: 0;
+        margin-left: 3em;
+    }
+
+    #nav a:hover,
+    #nav a:focus {
+        background: transparent;
+    }
+
+@media screen and (max-width: 1000px) {
+    body {
+        max-width: 66.66667%;
+    }
+}
+ 
+
+*/
