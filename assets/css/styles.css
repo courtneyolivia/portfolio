@@ -218,35 +218,219 @@ body {
 }
 
 
-/* Media Queries */
-/* Extra small devices (phones, 600px and down) */
+/* CODE Portfolio Grid */
 
-@media only screen and (max-width: 600px) {
+/*Note: If you are using landscape images use 'background-size:auto 100%;' in .textOverImage and 'background-size:auto 110%;' in .textOverImage:hover*/
 
+a {
+    text-decoration: none;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/*Add the following compatibility code for IE as you can't animate background-size in IE*/
 
-@media only screen and (min-width: 600px) {
-
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .textOverImage {
+        background-size: cover !important;
+    }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 900px) {
-
+.textOverImage {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 4px;
+    background-size: 100%;
+    background-position: center;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #000;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width: 1200px) {
-
+.textOverImage:hover {
+    background-size: 110%;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1800px) {
-
+.textOverImage:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(90%);
+    /*use transform:translateY(100%); to remove footer*/
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0 8px;
+    content: attr(data-title);
+    transition: 0.5s 0.1s;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
- 
+.textOverImage:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 8px;
+    content: attr(data-text);
+    transition: 0.5s;
+    padding-top: 2em;
+    margin-top: 8px;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.textOverImage:hover:after {
+    transform: translateY(0);
+    transition: 0.5s 0.1s;
+    opacity: 1;
+}
+
+.textOverImage:hover:before {
+    transform: translateY(0);
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+
+
+
+/* ART Portfolio Grid */
+body {
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+.portfolio-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.portfolio-grid li {
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+    vertical-align: top;
+    width: 212px;
+}
+
+.portfolio-grid li>a,
+.portfolio-grid li>a img {
+    width: 100%;
+    border: none;
+    outline: none;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.portfolio-grid li>a img:hover {
+    border-radius: 50%;
+    z-index: 9999;
+}
+
+/******************************************
+ Animate.CSS By Dan Eden
+******************************************/
+
+.animated {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotateX(-10deg);
+    }
+    70% {
+        -webkit-transform: perspective(400px) rotateX(10deg);
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes flipInX {
+    0% {
+        -moz-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    40% {
+        -moz-transform: perspective(400px) rotateX(-10deg);
+    }
+    70% {
+        -moz-transform: perspective(400px) rotateX(10deg);
+    }
+    100% {
+        -moz-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes flipInX {
+    0% {
+        -o-transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    40% {
+        -o-transform: perspective(400px) rotateX(-10deg);
+    }
+    70% {
+        -o-transform: perspective(400px) rotateX(10deg);
+    }
+    100% {
+        -o-transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes flipInX {
+    0% {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(400px) rotateX(-10deg);
+    }
+    70% {
+        transform: perspective(400px) rotateX(10deg);
+    }
+    100% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+.flipInX {
+    -webkit-backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    -moz-backface-visibility: visible !important;
+    -moz-animation-name: flipInX;
+    -o-backface-visibility: visible !important;
+    -o-animation-name: flipInX;
+    backface-visibility: visible !important;
+    animation-name: flipInX;
+}
