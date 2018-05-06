@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Courtney Olivia - Home</title>
+    <title>Courtney Olivia  |  About</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
 
@@ -22,12 +22,12 @@
 <body>
 
     <!-- Navigation bar -->
-    
+<div id="header">
     <div id="nav">
-        <div id="logo">
-            <img src="assets/img/cwdesign.png">
-        </div>
         <ul>
+            <li>
+                <img src="assets/img/courtneylogo.png" id="logo">
+            </li>
             <li>
                 <a href="home.html">home</a>
             </li>
@@ -40,7 +40,8 @@
             <li>
                 <a href="illustration.html">illustration</a>
             </li>
-        </ul>
+        </ul> 
+    </div>
     </div>
 
 <p id="contact">Contact me:</p>
@@ -52,14 +53,13 @@
 <a href="https://www.instagram.com/itsoliviarochelle/" class="fa fa-envelope"></a>
 
 <!-- Content -->
-    <div id="container">
         <div id="hgreen">about</div>
         <div id="content">
             <div id="me-image">
                 <img src="assets/img/me.jpg" alt="itsme">
             </div>
-
-            <a href="assets/img/resume2018.pdf" download>Click to download resume</a>
+            
+            <div id="prettyPurple">Hi!</div>
             <p>I am a web developer based in Atlanta, Georgia.</p>
 
             <p>I am a student at the full-stack Georgia Tech Coding Boot Camp and also a Junior at the
@@ -73,12 +73,19 @@
             a chance? I haven't looked back since! The challenges coding brings are truly addictive and I look forward
             to continuously advancing my skills.
             </p>
+
+
+            <button id="resume-button">
+                <i class="fa fa-download"></i>Download Resume</button>
+        </div>
         </div>
 
-
+<footer>
+    <div class="container">
+        Copyright &copy; 2018 Courtney Olivia
     </div>
-    <!-- End of container -->
-
+</footer>
+    
 
     <script src="assets/js/app.js">
 
