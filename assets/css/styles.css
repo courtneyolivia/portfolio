@@ -45,8 +45,7 @@ body {
 #header {
     overflow: hidden;
     background-color: #684C63;
-    padding: 20px 10px;
-    height: auto;
+    height: 300px;
 }
 
 /* Navigation */
@@ -67,17 +66,18 @@ nav a:first-child {
 }
 
 #nav ul {
-    list-style: none;
+    margin-top: 60px;
     color: #000;
     padding: 20px 0 20px 0;
     display: flex;
+    float: right;
 }
 
 #nav > ul > li {
-    display: inline-block;
+   
     list-style-type: none;
     padding: 0 25px 0 25px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 #nav > ul > li > a:hover {
@@ -91,6 +91,7 @@ nav a:first-child {
 #logo {
     width: 500px;
     height: auto;
+    float: left;
 }
 
 /* Image of Me */
@@ -202,6 +203,7 @@ nav a:first-child {
     letter-spacing: 5px;
     display: inline-block;
     padding: 20px;
+    float: right;
 }
 
 .fa {
@@ -216,15 +218,15 @@ nav a:first-child {
 
 .fa:hover {
     opacity: 0.7;
-}
+} 
 
-.fa-twitter {
-    background: #3ea8a3;
+.fa-linkedin {
+    background: #cf5276;
     color: white;
 }
 
-.fa-linkedin {
-    background: #87a53d;
+.fa-behance {
+    background: #ae75b2;
     color: white;
 }
 
@@ -233,15 +235,11 @@ nav a:first-child {
     color: white;
 }
 
-.fa-instagram {
-    background: #ae75b2;
+.fa-envelope {
+    background: #3ea8a3;
     color: white;
 }
 
-.fa-envelope {
-    background: #cf5276;
-    color: white;
-}
 
 
 /* CODE Portfolio Grid */
@@ -317,7 +315,7 @@ a {
 
 
 
-/* ART Portfolio Grid */
+/* DESIGN Portfolio Grid */
 .portfolio-grid {
     list-style: none;
     padding: 0;
@@ -364,20 +362,7 @@ footer {
     border-top: 8px solid #3ea8a3;
 }
 
-@media screen and (max-width: 500px) {
-    .header a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .header-right {
-        float: none;
-    }
+@media screen and (max-width: 600px) {
+
 }
 
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
-    .textOverImage {
-        background-size: cover !important;
-    }
-}
